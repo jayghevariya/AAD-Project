@@ -56,3 +56,8 @@ their account detail and type if they want to.
 - At this Time I implimented minimum Currency Problem With ATM.
 - here i have 2000,500,200,100,50,20,10,5,1 in currency. and it gives that solution which uses minimum number of currencys.
 - ``` It is Greedy Method ```
+
+### Travelling Salesman Problem
+- Here We have one salesman who is providing home banking.
+- So i implimented using TSP so that i can save petrols.
+
