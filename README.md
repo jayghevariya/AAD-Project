@@ -60,4 +60,19 @@ their account detail and type if they want to.
 ### Travelling Salesman Problem
 - Here We have one salesman who is providing home banking.
 - So i implimented using TSP so that i can save petrols.
+- This approach is native approach by DP. but it takes lot of time.
+- this is brute force mathod so it takes O((n-1)!) time which is not polynomial so we are not consider that.
+
+''' But in real world there is no solution for TSP but there is approximation solution '''
+- There is 2-approximation and 3/2-approximation.
+
+### 2-Approximation
+- For to use this approximation triangular inequality must be true.
+- What is Triangular inequality
+  - if there is 3 node a,b,c. and there is edge between ac ab and bc then cost(ab) + cost(bc) >= cost(ac).
+- Steps:-
+  - Let 0 be the starting and ending point for salesman.
+  - Construct Minimum Spanning Tree from with 0 as root using Prim’s Algorithm.
+  - List vertices visited in preorder walk/Depth First Search of the constructed MST and add source node at the end.
+  - it gives solution of O(polynomial).
 
