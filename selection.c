@@ -29,19 +29,15 @@ void firstselection(int a)          // Selection Funtions
         managerOption();
         break;
     case 9:
-    {
-        int n;
-        printf("How many City He has to visit:");
-        scanf("%d",&n);
-        travel(n);
+        select_method();
         break;
-    }
     case 10:
         exit(1);
         break;
    
     
     default:
+        
         break;
     }
     

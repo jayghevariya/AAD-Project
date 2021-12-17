@@ -14,8 +14,6 @@ void delay(int number_of_seconds)
 int main()
 {
 
-	
-
     MinimumACnoStart=(MinimumACno*)malloc(sizeof(MinimumACno));        
     MinimumACnoEnd=(MinimumACno*)malloc(sizeof(MinimumACno));            
     MinimumACnoPoint=(MinimumACno*)malloc(sizeof(MinimumACno));

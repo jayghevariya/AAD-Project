@@ -1,6 +1,6 @@
 #include "header.h"
 
-void travel(int city)
+void travel()
 {
     char array[city][20];
     printf("Please Enter City Names:\n");
@@ -25,7 +25,11 @@ void travel(int city)
             if (i!=j)
             {
                 printf("Enter Cost for %s to %s:",array[i],array[j]);
+                // mumbai surat mumabi delhi surat ahem  mumbai -> 2*mst 
+                // surat-mumbai 10
+                // mum
                 scanf("%d",&cost[i][j]);
+                
             }
             
         }
@@ -44,9 +48,9 @@ void travel(int city)
     }
     
     int ans=tsp(1,0,city,ALL_VISIT);
-    printf("%d",ans);
-    delay(3000);
-    
+    printf("%d\n",ans);
+    delay(10000);
+    free(cost);
     
     
     
@@ -89,3 +93,5 @@ int tsp(int mask,int pos,int city,int ALL_VISIT)
     
     
 }
+
+

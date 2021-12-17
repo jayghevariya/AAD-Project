@@ -3,6 +3,7 @@
 #include<stdlib.h>
 #include<string.h>
 #include <time.h>
+#include <stdbool.h>
 
 
 /* TYPEDEF */
@@ -30,6 +31,9 @@ Account* startPtr;                      // Array to Store Customers
 int MaxLen;                             // Max Possible Customers
 int Point;                              // This is point to next position for customer
 int Last;                               // Storing Largest Ac No
+int city;
+int indexs;
+int* path;
 
 typedef struct MinimumACno              // Liknked List for getting Minimum AC no 
 {
@@ -81,9 +85,14 @@ void merge_age(Account arr[], int l, int m, int r);
 /* Min Notes */
 
 void Min_Notes(int amount);
+void approximation();
+int minKey(int key[], bool mstSet[]);
+void printMST(int parent[]);
+void primMST();
+void select_method();
+void dfs(int adj_list[city][city],int start,int visit[city]);
 
-
-void travel(int city);
+void travel();
 int tsp(int mask,int pos,int city,int ALL_VISIT);
 int min(int a,int b);
 

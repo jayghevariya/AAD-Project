@@ -126,3 +126,26 @@ void sort_by_name()
 	print(sort);
 }
 
+
+void select_method()
+{
+       int n;
+       printf("\e[1;1H\e[2J");
+        printf("\n----------WELCOME TO IIIT BANK----------\n\n");  
+        printf("1. Brute Force Method \n2. 2-Approximation method\n\n");
+        scanf("%d",&n);
+        if (n==1)
+        {
+            printf("How many City He has to visit:");
+            scanf("%d",&city);
+            travel();
+        }else if(n==2)
+        {
+            printf("How many City He has to visit:");
+            scanf("%d",&city);
+            approximation();
+        }
+        
+        
+    
+}
